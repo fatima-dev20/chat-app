@@ -36,7 +36,7 @@ const Sidebar = () => {
               strokeWidth={2.5}
             />
 
-            <h1 className="text-2xl font-bold text-white">
+            <h1 className="text-xl font-bold text-white">
               Chat System
             </h1>
           </div>
