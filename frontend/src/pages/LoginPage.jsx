@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import assets from '../assets/assets'
+import { MessagesSquare } from "lucide-react";
 import { AuthContext } from '../../context/AuthContext'
 import { useNavigate } from 'react-router-dom'
 
@@ -51,11 +52,18 @@ const LoginPage = () => {
         <div className="hidden md:flex flex-col justify-between p-12 bg-gradient-to-br from-violet-600/20 to-indigo-600/10">
 
           <div>
-            <img
-              src={assets.logo_big}
-              alt="Logo"
-              className="w-36 mb-14"
+             <div className="flex items-center gap-2 mb-14">
+            <MessagesSquare
+              size={38}
+              className="text-[#6316c2]"
+              strokeWidth={2.5}
             />
+
+            <h1 className="text-2xl font-bold text-white">
+              Chat System
+            </h1>
+          </div>
+          
 
             <h1 className="text-4xl font-bold text-white leading-tight">
               Connect with people,
